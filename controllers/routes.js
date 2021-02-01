@@ -5,4 +5,10 @@ module.exports = app => {
     app.get('/agendamentos', (req, resp) => {
         resp.send('Servidor OK')
     });
+
+    app.post('/agendar', (req, resp) => {
+        //Verificar o que está sendo recebido
+        console.log(req.body)
+        resp.send('POST OK')
+    });
 };
