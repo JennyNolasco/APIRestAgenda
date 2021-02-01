@@ -1,16 +1,10 @@
-const express = require('express')
+const configExpress = require('./config/configExpress')
 
-
-//Criando nossa aplicação
-const app = express()
+// O configExpress é uma função que retorna nosso app configurado. 
+//Chamando a função para obter o app configurado
+app = configExpress()
 
 //Subindo o servidor na porta 3000 e assim que subir executar uma função
 app.listen(3000,  () => {
     console.log('Servidor Rodando na porta 3000')
-});
-
-// O express nos fornece 2 coisas: req e resp
-// Req o que estamos recebendo e Resp o que iremos enviar 
-app.get('/', (req, resp) => {
-    resp.send('Servidor OK')
 });
