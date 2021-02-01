@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JennyNolasco/APIRestAgenda/issues"
   },
-  "homepage": "https://github.com/JennyNolasco/APIRestAgenda#readme"
+  "homepage": "https://github.com/JennyNolasco/APIRestAgenda#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
