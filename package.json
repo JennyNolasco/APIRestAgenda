@@ -1,0 +1,19 @@
+{
+  "name": "apirestagenda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JennyNolasco/APIRestAgenda.git"
+  },
+  "author": "Jeniffer Nolasco Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JennyNolasco/APIRestAgenda/issues"
+  },
+  "homepage": "https://github.com/JennyNolasco/APIRestAgenda#readme"
+}
