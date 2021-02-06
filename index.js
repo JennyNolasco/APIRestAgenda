@@ -1,6 +1,6 @@
-const configExpress = require('./config/configExpress')
-const conexao = require('./infra/conexao')
-const Tabelas = require('./infra/Tabelas')
+const configExpress = require('./config/configExpress');
+const conexao = require('./infra/conexao');
+const Tabelas = require('./infra/Tabelas');
 
 //O connect é responsável por conectar no servidor, mas precisamos testar
 conexao.connect(error => {

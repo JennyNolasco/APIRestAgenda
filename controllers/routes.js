@@ -1,3 +1,5 @@
+const Agendamento = require('../models/Agendamento')
+
 // Exportando app
 module.exports = app => {
     // O express nos fornece 2 coisas: req e resp
@@ -8,7 +10,8 @@ module.exports = app => {
 
     app.post('/agendar', (req, resp) => {
         //Verificar o que está sendo recebido
-        console.log(req.body)
+        const agendamento = req.body;
+        Agendamento.inserir(agendamento)
         resp.send('POST OK')
     });
 };
