@@ -11,7 +11,8 @@ module.exports = app => {
     app.post('/agendar', (req, resp) => {
         //Verificar o que está sendo recebido
         const agendamento = req.body;
-        Agendamento.inserir(agendamento)
-        resp.send('POST OK')
+
+        //Passar o resp, para já retornar nosso resultado
+        Agendamento.inserir(agendamento, resp)        
     });
 };
